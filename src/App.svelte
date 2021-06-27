@@ -9,6 +9,9 @@
 	const handleInput = (event) => {
 		name = event.target.value;
 	}
+	const resetValue = () => {
+		name = "Unknown"
+	}
 </script>
 
 <main>
@@ -16,6 +19,7 @@
 <!--	<h3>Counter: {count}</h3>-->
 <!--	<button on:click={incrementCounter}>Add 1 to counter</button>-->
 	<input type="text" on:input={handleInput}>
+	<button on:click={resetValue}>Reset</button>
 	<img {src} alt="Svelte icon">
 </main>
 
