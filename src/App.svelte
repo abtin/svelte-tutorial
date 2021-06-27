@@ -1,9 +1,11 @@
 <script>
-	let name="Amina";
+	let name="Steve";
+	let src="favicon.png"
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
+	<img src={src} alt="Svelte icon">
 </main>
 
 <style>
