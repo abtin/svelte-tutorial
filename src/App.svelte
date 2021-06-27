@@ -4,7 +4,7 @@
 </script>
 
 <main>
-	<Button />
+	<Button btnText={"hello world"} />
 </main>
 
 <style>

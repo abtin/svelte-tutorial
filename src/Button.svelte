@@ -1,10 +1,8 @@
 <script>
-
+    export let btnText;
 </script>
 
-<button>
-Text
-</button>
+<button>{btnText}</button>
 
 <style>
 
