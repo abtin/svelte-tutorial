@@ -7,11 +7,13 @@
 </script>
 
 <main>
-	{#each fruits as fruit}
+	{#each fruits as fruit (fruit.id)}
 		<div class="card">
 			<h5>{fruit.name}</h5>
 			<p>{fruit.color}</p>
 		</div>
+	{:else}
+		<p>There is no element in the array</p>
 	{/each}
 </main>
 
