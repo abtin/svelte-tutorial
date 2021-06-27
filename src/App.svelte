@@ -4,6 +4,9 @@
 		{name: "Banana", color: "yellow", amount: 7, id: 2},
 		{name: "Grape", color: "purple", amount: 3, id: 3},
 	]
+	const deleteFruit = (id) => {
+		console.log("Fruit Id to delete:", id)
+	}
 </script>
 
 <main>
@@ -11,9 +14,10 @@
 		<div class="card">
 			<h5>{fruit.name}</h5>
 			<p>{fruit.color}</p>
+			<button on:click={() => deleteFruit(fruit.id)}>Delete</button>
 		</div>
 	{:else}
-		<p>There is no element in the array</p>
+		<p>There are no fruit in our fruits array</p>
 	{/each}
 </main>
 
