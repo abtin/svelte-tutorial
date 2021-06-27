@@ -7,14 +7,16 @@
 </script>
 
 <main>
-	<div class="card">
-		<h5>{fruits[0].name}</h5>
-		<p>{fruits[0].color}</p>
-	</div>
+	{#each fruits as fruit}
+	{/each}
 </main>
 
 <style>
+	h5, p {
+		margin: 4px 0px;
+	}
 	.card {
+		min-width: 400px;
 		padding: 8px;
 		border-radius: 20px;
 		border: 2px solid gray;
