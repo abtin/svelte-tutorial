@@ -6,9 +6,9 @@
 	const incrementCounter = () => {
 		count++;
 	}
-	const handleInput = (event) => {
-		name = event.target.value;
-	}
+	// const handleInput = (event) => {
+	// 	name = event.target.value;
+	// }
 	const resetValue = () => {
 		name = "Unknown"
 	}
