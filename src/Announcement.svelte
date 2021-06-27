@@ -14,10 +14,5 @@
 {/if}
 
 <style>
-    .alert {
-        padding: 8px;
-        font-size: 18px;
-        background-color: darkseagreen;
-        color: darkslategray;
-    }
+
 </style>
