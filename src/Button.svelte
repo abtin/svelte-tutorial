@@ -2,8 +2,8 @@
     export let btnText = "Component Button";
 </script>
 
-<div class="card" on:click|self>
-    <button>{btnText}</button>
+<div class="card">
+    <button on:click|once>{btnText}</button>
 </div>
 
 <style>
