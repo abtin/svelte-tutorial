@@ -18,6 +18,8 @@
 				<p>{fruit.color}</p>
 				<button on:click={() => deleteFruit(fruit.id)}>Delete</button>
 			</div>
+			{:else}
+			<p>The amount for {fruit.name} is less than 4</p>
 		{/if}
 	{:else}
 		<p>There are no fruit in our fruits array</p>
