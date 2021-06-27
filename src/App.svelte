@@ -20,4 +20,7 @@
 		font-size: 72px;
 		text-align: center;
 	}
+	h3 {
+		font-size: 30px;
+	}
 </style>
