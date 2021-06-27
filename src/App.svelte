@@ -1,25 +1,9 @@
 <script>
-	let firstName="";
-	let lastName="";
-	let src="favicon.png"
 
-	$: fullName = `${firstName} ${lastName}`
-	$: {
-		console.log(firstName);
-		console.log(lastName);
-	}
 </script>
 
 <main>
-	<h1>Hello {fullName}!</h1>
-
-	<label for="fistName">First Name</label>
-	<input type="text" bind:value={firstName}>
-
-	<label for="lastName">Last Name</label>
-	<input type="text" bind:value={lastName}>
-
-	<img {src} alt="Svelte icon">
+	
 </main>
 
 <style>
