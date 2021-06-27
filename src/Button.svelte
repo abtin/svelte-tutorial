@@ -2,7 +2,10 @@
     export let btnText = "Component Button";
 </script>
 
-<button on:click>{btnText}</button>
+<div>
+    <span on:click>click to log</span>
+    <button>{btnText}</button>
+</div>
 
 <style>
     button {

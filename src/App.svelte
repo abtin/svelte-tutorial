@@ -2,7 +2,7 @@
 	import Button from "./Button.svelte";
 
 	const log = () => {
-		console.log("Button clicked")
+		console.log("clicked")
 	}
 </script>
 
