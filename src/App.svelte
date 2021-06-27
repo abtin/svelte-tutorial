@@ -5,7 +5,7 @@
 
 <main>
 	<h1>Hello {name}!</h1>
-	<img src={src} alt="Svelte icon">
+	<img {src} alt="Svelte icon">
 </main>
 
 <style>
