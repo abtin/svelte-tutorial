@@ -2,12 +2,16 @@
 	let name="Steve";
 	let src="favicon.png"
 	let count = 0;
+
+	const incrementCounter = () => {
+		count++;
+	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<h3>Counter: {count}</h3>
-	<button>Add 1 to counter</button>
+	<button on:click={incrementCounter}>Add 1 to counter</button>
 	<img {src} alt="Svelte icon">
 </main>
 
