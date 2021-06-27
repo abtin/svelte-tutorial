@@ -5,7 +5,8 @@
 		{name: "Grape", color: "purple", amount: 3, id: 3},
 	]
 	const deleteFruit = (id) => {
-		console.log("Fruit Id to delete:", id)
+		console.log("Deleting fruit with id:", id);
+		fruits = fruits.filter((f) => f.id !== id);
 	}
 </script>
 
