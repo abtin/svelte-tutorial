@@ -1,16 +1,20 @@
 <script>
-	let name="";
+	let firstName="";
+	let lastName="";
 	let src="favicon.png"
 
-	const resetValue = () => {
-		name = "Unknown"
-	}
+	$: fullName = `${firstName} ${lastName}`
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<input type="text" bind:value={name}>
-	<button on:click={resetValue}>Reset to unknown</button>
+	<h1>Hello {fullName}!</h1>
+
+	<label for="fistName">First Name</label>
+	<input type="text" bind:value={firstName}>
+
+	<label for="lastName">Last Name</label>
+	<input type="text" bind:value={lastName}>
+	
 	<img {src} alt="Svelte icon">
 </main>
 
