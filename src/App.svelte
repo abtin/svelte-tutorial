@@ -4,7 +4,10 @@
 	let src="favicon.png"
 
 	$: fullName = `${firstName} ${lastName}`
-	$: console.log(lastName);
+	$: {
+		console.log(firstName);
+		console.log(lastName);
+	}
 </script>
 
 <main>
