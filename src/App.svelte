@@ -1,5 +1,5 @@
 <script>
-	let name="world";
+	let name="Amina";
 </script>
 
 <main>
