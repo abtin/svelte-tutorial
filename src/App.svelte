@@ -1,10 +1,13 @@
 <script>
-	let name="Steve";
+	let name="";
 	let src="favicon.png"
 	let count = 0;
 
 	const incrementCounter = () => {
 		count++;
+	}
+	const handleInput = (event) => {
+		name = event.target.value;
 	}
 </script>
 
@@ -12,7 +15,7 @@
 	<h1>Hello {name}!</h1>
 <!--	<h3>Counter: {count}</h3>-->
 <!--	<button on:click={incrementCounter}>Add 1 to counter</button>-->
-	<input type="text">
+	<input type="text" on:input={handleInput}>
 	<img {src} alt="Svelte icon">
 </main>
 
