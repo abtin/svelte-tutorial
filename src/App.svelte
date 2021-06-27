@@ -4,6 +4,7 @@
 	let src="favicon.png"
 
 	$: fullName = `${firstName} ${lastName}`
+	$: console.log(lastName);
 </script>
 
 <main>
@@ -14,7 +15,7 @@
 
 	<label for="lastName">Last Name</label>
 	<input type="text" bind:value={lastName}>
-	
+
 	<img {src} alt="Svelte icon">
 </main>
 
