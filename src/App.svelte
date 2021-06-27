@@ -7,7 +7,10 @@
 </script>
 
 <main>
-	<div class="card"></div>
+	<div class="card">
+		<h5>{fruits[0].name}</h5>
+		<p>{fruits[0].color}</p>
+	</div>
 </main>
 
 <style>
