@@ -1,10 +1,17 @@
 <script>
+    let show = true;
 
+    const hideAnnouncement = () => {
+        show = false;
+    }
 </script>
 
-<div class="alert">
-    %50 off all fruits. Sign up for more fruits.
-</div>
+{#if show}
+    <div class="alert">
+        %50 off all fruits. Sign up for more fruits.
+        <button on:click={hideAnnouncement}>Hide</button>
+    </div>
+{/if}
 
 <style>
     .alert {
