@@ -1,5 +1,5 @@
 <script>
-    export let btnText;
+    export let btnText = "default text";
 </script>
 
 <button>{btnText}</button>
