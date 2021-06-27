@@ -14,6 +14,7 @@
 
 <main>
 	<Announcement />
+	<div class="alert">An alert in the main!</div>
 	{#each fruits as fruit (fruit.id)}
 		{#if fruit.amount > 4}
 			<div class="card">
