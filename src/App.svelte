@@ -8,6 +8,10 @@
 
 <main>
 	{#each fruits as fruit}
+		<div class="card">
+			<h5>{fruit.name}</h5>
+			<p>{fruit.color}</p>
+		</div>
 	{/each}
 </main>
 
@@ -20,6 +24,7 @@
 		padding: 8px;
 		border-radius: 20px;
 		border: 2px solid gray;
+		margin-top: 8px;
 	}
 	main {
 		display: flex;
