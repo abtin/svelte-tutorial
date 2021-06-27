@@ -18,7 +18,7 @@
 	<h1>Hello {name}!</h1>
 <!--	<h3>Counter: {count}</h3>-->
 <!--	<button on:click={incrementCounter}>Add 1 to counter</button>-->
-	<input type="text" on:input={handleInput} value={name}>
+	<input type="text" bind:value={name}>
 	<button on:click={resetValue}>Reset to unknown</button>
 	<img {src} alt="Svelte icon">
 </main>
