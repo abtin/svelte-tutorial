@@ -3,6 +3,7 @@
 </script>
 
 <div class="card">
+    <slot name="button"></slot>
     <slot></slot>
 </div>
 
