@@ -2,8 +2,7 @@
     export let btnText = "Component Button";
 </script>
 
-<div on:click>
-    <span>click to log</span>
+<div class="card" on:click|self>
     <button>{btnText}</button>
 </div>
 
@@ -13,5 +12,9 @@
         border: 1px solid #4c51bf;
         color: #fff;
     }
-
+    .card {
+        padding: 12px;
+        border: 2px solid gray;
+        margin-bottom: 8px;
+    }
 </style>
