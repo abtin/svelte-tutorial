@@ -1,11 +1,14 @@
 <script>
 	import Button from "./Button.svelte";
 
+	const log = () => {
+		console.log("Button clicked")
+	}
 </script>
 
 <main>
-	<Button />
-	<button>App Button</button>
+	<Button on:click={log}/>
+	<button on:click={log}>App Button</button>
 </main>
 
 <style>
