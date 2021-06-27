@@ -7,6 +7,7 @@
 <main>
 	<h1>Hello {name}!</h1>
 	<h3>Counter: {count}</h3>
+	<button>Add 1 to counter</button>
 	<img {src} alt="Svelte icon">
 </main>
 
