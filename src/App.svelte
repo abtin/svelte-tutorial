@@ -5,6 +5,7 @@
 
 <main>
 	<Button />
+	<button>App Button</button>
 </main>
 
 <style>
