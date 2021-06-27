@@ -12,11 +12,13 @@
 
 <main>
 	{#each fruits as fruit (fruit.id)}
-		<div class="card">
-			<h5>{fruit.name}</h5>
-			<p>{fruit.color}</p>
-			<button on:click={() => deleteFruit(fruit.id)}>Delete</button>
-		</div>
+		{#if fruit.amount > 4}
+			<div class="card">
+				<h5>{fruit.name}</h5>
+				<p>{fruit.color}</p>
+				<button on:click={() => deleteFruit(fruit.id)}>Delete</button>
+			</div>
+		{/if}
 	{:else}
 		<p>There are no fruit in our fruits array</p>
 	{/each}
